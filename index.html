@@ -1,0 +1,252 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+		<!--FCC script CHECK-->
+		<!--<script type="text/javascript" src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>-->
+		<title>FCC: Technical Documentation Page</title>
+	</head>
+	
+	<body>
+		<div class="container">
+			<div class="menu">
+				<header>HTML Documentation</header>
+				<button id="icon-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<nav>
+					<ul>
+						<li><a href="#anchor1" class="nav-link">Basics of HTML5</a></li>
+						<li><a href="#anchor2" class="nav-link">Organize the text</a></li>
+						<li><a href="#anchor3" class="nav-link">Create Links</a></li>			
+						<li><a href="#anchor4" class="nav-link">Images</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="content">
+				<section id="section1">
+					<h3 id="anchor1">Basics of HTML5 ?</h3>
+					<p>
+						HTML and CSS are the ground of work of every websites. When you're consulting a site with your navigator,
+						you have to know that, in the background, machineries are starting to make the websites able to show itself.
+						The computer is basing on what HTML and CSS tell him to know what he have to show.
+						<img class="centerImage" src="https://image.noelshack.com/fichiers/2018/03/4/1516294468-htmlcsscomputer.png" alt="csshtmlatWork"/>
+						<!--<img class="centerImage" src="img/htmlCssComputer.png" alt="csshtmlatWork"/>-->
+						
+						HTML and CSS are two "languages" you have to speak to creat websites. It's the web navigators (firefox, chrome, edge...)
+						which will traduct between the two languages and what you see on your screen.
+						
+						HTML (HyperText Markup Language): it's the skeleton of any websites.
+						CSS (Cascading Style Sheets):  it's the "look of" the websites.
+						<img class="centerImage" src="https://image.noelshack.com/fichiers/2018/03/4/1516295372-withorwithoutcss.png" alt="withOrWithoutCSS"/>
+						<!-- <img class="centerImage" src="" alt="withOrWithoutCSS"/> -->
+						
+						To work on HTML and css, you only need a simple windows text editor or a more advanced one like notepadd++ or sublime Text.
+						<img class="centerImage" src="https://image.noelshack.com/fichiers/2018/03/4/1516295922-wnotes.png" alt="sublimeText"/>
+						<!-- <img class="centerImage" src="css/wNotes" alt="sublime" />-->
+						<img class="centerImage" src="https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/sublimetext1.png" alt="sublimeText"/>
+						<!-- <img class="centerImage" src="css/sublimetext1.png" alt="sublime" />-->
+					</p>		
+					<h5>Tags and Attributs</h5>
+					<p>
+						In HTML we use what we call "Tags" and in css "Attributs". "Tags" are keywords surrounded by <code><span class="tags">&lt;&gt;</span></code> like <code><span class="tags">&lt;p&gt;</span></code>.
+						It is use to tell to the navigator the nature of how you want the information between the tags, to be treated like.
+						Generaly, Tags comes by group of two: an opening and one closing it:
+						<code class="outText"><span class="tags">&lt;title&gt;</span>This is a title<span class="tags">&lt;/title&gt;</span></code> <br/>
+						<code class="outText"><span class="tags">&lt;p&gt;</span>This is a paragraph<span class="tags">&lt;/p&gt;</span></code> <br/>
+						
+						You can find "self-closing tag" too. It mean that you don't need to use specific closing tag:
+						<br/><code class="outText"><span class="tags">&lt;img/&gt;</span></code> <br/>
+						
+						About the "Attributs". They are a bit like the tags' options. They complet them to give more informations:
+						They look commonly like this:
+						<br/><code class="outText"><span class="tags">&lt;tags <span class="attributs">attribut</span>=<span class="value">"value"</span>&gt;</span></code> <br/>
+						
+						Here a real exemple:
+						<br/><code class="outText"><span class="tags">&lt;img <span class="attributs">src</span>=<span class="value">"localOrURLadress"</span> <span class="attributs">alt</span>=<span class="value">"My Image description"</span>/&gt;</span></code> <br/>	
+					</p>
+					<h5>The basics structure of an HTML page</h5>
+					<p>
+						This code responde to a basic HTML5 page:
+					</p>
+						<code class="preCode">
+							<PRE>
+								&lt;!DOCTYPE html&gt;
+								<span class="tags">&lt;html&gt;</span>
+									<span class="tags">&lt;head&gt;</span>
+										<span class="tags">&lt;meta <span class="attributs">charset</span>=<span class="value">"utf-8"</span> /&gt;</span>
+										<span class="tags">&lt;title&gt;</span>Titre<span class="tags">&lt;/title&gt;</span>
+									<span class="tags">&lt;/head&gt;</span>
+
+									<span class="tags">&lt;body&gt;</span><span class="tags">&lt;/body&gt;</span>
+								<span class="tags">&lt;/html&gt;</span>
+							</PRE>		
+						</code>
+					<p>
+						The first line is the DOCTYPE. It is essential and unique because it say that it is a HTML5 page.</br>
+						The <code><span class="tags">&lt;html&gt;&lt;/html&gt;</span></code> represent the contents of the page.</br>
+						The <code><span class="tags">&lt;head&gt;&lt;/head&gt;</span></code> represent general informations about the page.</br>
+						The <code><span class="tags">&lt;body&gt;&lt;/body&gt;</span></code> represent the principal part of the page. It's where we write.</br>
+						The <code><span class="tags">&lt;meta <span class="attributs">charset</span>=<span class="value">"utf-8"</span> /&gt;</span></code> is the "encoding".</br>
+						The <code><span class="tags">&lt;title&gt;&lt;/title&gt;</span></code> represent the title of the page:
+						<img class="centerImage" src="https://image.noelshack.com/fichiers/2018/03/5/1516372076-titlepage.png" alt="titlePage"/>
+						<!--<img class="centerImage" src="img/titlePage" alt="titlePage"/>-->	
+					</p>
+					<h5>The commentary</h5>
+					<p>
+						Commentaries are used to help you and others understanding your code better. It is only visible in the code itself:
+						 <br/><code class="outText"><span class="comment">&lt;!-- this is a commentary --&gt;</span></code> <br/>
+						You have to understand that your code is completly visible by every one if it's on the web. 
+						In many browser, it's accessible by right clicking on the page then clic "Show the source code of the page".
+						<img class="centerImage widthControl" src="https://user.oc-static.com/files/340001_341000/340562.png" alt="showSourceCodeButton"/>
+						<!--<img class="centerImage" src="img/showSourceCodeButton.png" alt="showSourceCodeButton.png"/>-->	
+					</p>
+				</section>
+				
+				<section id="section2">
+					<h3 id="anchor2">Organize the text</h3>
+					<p>
+						We will se how to:
+						<ul class="ulPresentation">
+							<li>How to write paragraphes</li>
+							<li>How to structure your page with a title</li>
+							<li>How to give importance to certain words in your text</li>
+							<li>How to organize information like a list</li>
+						</ul>
+					</p>
+					<h5>The paragraphes</h5>
+					<p>
+						Most of the time, when we write simple text in a web page, we do it inside a paragraph.
+						<code class="outText"><span class="tags">&lt;p&gt;</span>This is a paragraph<span class="tags">&lt;/p&gt;</span></code> <br/>
+						
+						Like i said before, we write the the website content into the tag <code><span class="tags">&lt;body&gt;&lt;/body&gt;</span></code>
+						If you want one way to "line break", you have to use more than one <code><span class="tags">&lt;p&gt;</span></code>: <br/>		
+					</p>
+					<code class="preCode">
+						<PRE>
+							&lt;!DOCTYPE html&gt;
+							<span class="tags">&lt;html&gt;</span>
+								<span class="tags">&lt;head&gt;</span>
+									<span class="tags">&lt;meta <span class="attributs">charset</span>=<span class="value">"utf-8"</span> /&gt;</span>
+									<span class="tags">&lt;title&gt;</span>Titre<span class="tags">&lt;/title&gt;</span>
+								<span class="tags">&lt;/head&gt;</span>
+
+								<span class="tags">&lt;body&gt;</span>
+									<span class="tags">&lt;p&gt;</span>
+										My Text 1
+									<span class="tags">&lt;/p&gt;</span>
+									<span class="tags">&lt;p&gt;</span>
+										My Text 2
+									<span class="tags">&lt;/p&gt;</span>
+								<span class="tags">&lt;/body&gt;</span>
+							<span class="tags">&lt;/html&gt;</span>
+						</PRE>		
+					</code>	
+					<p>
+						To do the same, you can use <code><span class="tags">&lt;/br&gt;</span></code> where you want it to happen.
+					</p>
+					<h5>The Titles</h5>
+					<p>
+						To help you to manage your paragraphs better, you can use title. In HTML, we're lucky because we can directly use 6 tags for this use.
+						It go from very big to very little:
+						</br><code class="outText"><span class="tags">&lt;h1&gt;&lt;/h1&gt;</span></code>Very big boy<br/>
+						<code class="outText"><span class="tags">&lt;h2&gt;&lt;/h2&gt;</span></code><br/>
+						<code class="outText"><span class="tags">&lt;h3&gt;&lt;/h3&gt;</span></code><br/>
+						<code class="outText"><span class="tags">&lt;h4&gt;&lt;/h4&gt;</span></code><br/>
+						<code class="outText"><span class="tags">&lt;h5&gt;&lt;/h5&gt;</span></code><br/>
+						<code class="outText"><span class="tags">&lt;h6&gt;&lt;/h6&gt;</span></code>Very little boy<br/>
+					</p>
+					<h5>HighLight your text</h5>
+					<p>
+						All of these tags will have default 'css' associated to them. It mean that for exemple, one will be italic and the other one strong.
+						But it's just the default 'look' and you should not use it like this. Their primary goal is not catch your eyes and the google robots eyes:
+						<br/><code class="outText"><span class="tags">&lt;em&gt;&lt;/em&gt;</span></code> it make the text <em>italic</em><br/>
+						<p><code class="outText"><span class="tags">&lt;strong&gt;&lt;/strong&gt;</span></code> it make the text <strong>strong</strong></p>
+						<p><code class="outText"><span class="tags">&lt;strong&gt;&lt;/strong&gt;</span></code> it make the text <strong>strong</strong></p>
+						<p><code class="outText"><span class="tags">&lt;mark&gt;&lt;/mark&gt;</span></code> it surround the text with a <mark>yellow</mark> color</p>
+						It's important to point out that css is for the form and HTML the content.
+					</p>
+					<h5>Lists</h5>
+					<p>
+						Lists are commonly use to help to structurate our text and order informations. Two type of list exist:
+						<ul class="ulPresentation">
+							<li>Unordered list</li>
+							<li>Ordoned list</li>
+						</ul>
+						<p>An unordered list look like this:</p>
+						<ul class="ulPresentation">
+							<li>Tomatos</li>
+							<li>Carotts</li>
+						</ul>
+						
+<code class="preCode">
+<PRE>
+<span class="tags">&lt;ul&gt;</span>
+	<span class="tags">&lt;li&gt;</span>Tomatoes<span class="tags">&lt;/li&gt;</span>
+	<span class="tags">&lt;li&gt;</span>Carotts<span class="tags">&lt;/li&gt;</span>
+<span class="tags">&lt;/ul&gt;</span>
+</PRE>		
+</code>	
+						<p>An unordered list look like this:</p>
+						<ol class="ulPresentation">
+							<li>Tomatos</li>
+							<li>Carotts</li>
+						</ol>
+<code class="preCode">
+<PRE>
+<span class="tags">&lt;ol&gt;</span>
+	<span class="tags">&lt;li&gt;</span>Tomatoes<span class="tags">&lt;/li&gt;</span>
+	<span class="tags">&lt;li&gt;</span>Carotts<span class="tags">&lt;/li&gt;</span>
+<span class="tags">&lt;/ol&gt;</span>
+</PRE>		
+</code>							
+					</p>
+				</section>
+				
+				<section id="section3">
+					<h3 id="anchor3">Create Links</h3>
+					<p>
+						Like you already know, the web is compose of multiple pages. How do you do come go from one to an other ? With the help of links ! To do this, you will need this tag:<br/>
+						<code class="outText"><span class="tags">&lt;a </span><span class="attributs">href</span>=<span class="value">"http://url.com"</span>&gt;Click me<span class="tags">&lt;/a&gt;</span></code><br/>
+						It can be use for directing some one to an webpage, a local page or to make him download a file.<br/>
+						<code class="outText"><span class="tags">&lt;a </span><span class="attributs">href</span>=<span class="value">"http://url.com"</span>&gt;Click me<span class="tags">&lt;/a&gt;</span></code><br/>
+						<code class="outText"><span class="tags">&lt;a </span><span class="attributs">href</span>=<span class="value">"folder/myfile.html"</span>&gt;Click me<span class="tags">&lt;/a&gt;</span></code><br/>
+						<code class="outText"><span class="tags">&lt;a </span><span class="attributs">href</span>=<span class="value">"downloadme.zip"</span>&gt;Click me<span class="tags">&lt;/a&gt;</span></code><br/>
+
+						And finaly you can create what is call "Anchor". It give you the possibility to go, in the same page or in an other one, somewhere in it by just clicking:</br>
+						<code class="outText"><span class="tags">&lt;h2</span> <span class="attributs">id=</span><span class="value">"my-anchor"<span class="tags">&gt;</span>Title<span class="tags">&lt;/h2&gt;</span></code></br>
+						Then where you want to go to:</br>
+						<code class="outText"><span class="tags">&lt;a </span> <span class="attributs">href=</span><span class="value">"#my_anchor"</span>&gt;Click me<span class="tags">&lt;/a&gt;</span></code><br/>
+					</p>
+				</section>
+				
+				<section id="section4">
+					<h3 id="anchor4">Images</h3>
+					<p>
+						Like i showed your before, img tag is an auto closing tags. You can use this tags with local files and web url:
+						<br/><code class="outText"><span class="tags">&lt;img <span class="attributs">src</span>=<span class="value">"localfolder/localimage.png"</span> <span class="attributs">alt</span>=<span class="value">"My Image description"</span>/&gt;</span></code> <br/>	
+						<br/><code class="outText"><span class="tags">&lt;img <span class="attributs">src</span>=<span class="value">"https://urlImage.png"</span> <span class="attributs">alt</span>=<span class="value">"My Image description"</span>/&gt;</span></code> <br/>	
+					</p>
+				</section>
+			</div>
+			<div class="footer"><p>Copyright © 2018 Pocahontas123</p></div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+		<script>
+			$(document).ready(function() {
+				$('#icon-menu').on('click', function() {
+					$('nav').toggleClass('expand');
+					$('header').toggleClass('expand');
+				});
+				
+				$('#icon-menu').on('click', function() {
+					$('#icon-menu').toggleClass('trigger');
+				});
+			});
+			
+		</script>
+	</body>
+</html>
