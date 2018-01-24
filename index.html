@@ -12,11 +12,6 @@
 		<div class="container">
 			<div class="menu">
 				<header>HTML Documentation</header>
-				<button id="icon-menu">
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
 				<nav>
 					<ul>
 						<li><a href="#anchor1" class="nav-link">Basics of HTML5</a></li>
@@ -109,14 +104,14 @@
 				<section id="section2">
 					<h3 id="anchor2">Organize the text</h3>
 					<p>
-						We will se how to:
+						<p>We will se how to:</p>
 						<ul class="ulPresentation">
 							<li>How to write paragraphes</li>
 							<li>How to structure your page with a title</li>
 							<li>How to give importance to certain words in your text</li>
 							<li>How to organize information like a list</li>
 						</ul>
-					</p>
+					</p></br>
 					<h5>The paragraphes</h5>
 					<p>
 						Most of the time, when we write simple text in a web page, we do it inside a paragraph.
@@ -167,7 +162,7 @@
 						<p><code class="outText"><span class="tags">&lt;strong&gt;&lt;/strong&gt;</span></code> it make the text <strong>strong</strong></p>
 						<p><code class="outText"><span class="tags">&lt;strong&gt;&lt;/strong&gt;</span></code> it make the text <strong>strong</strong></p>
 						<p><code class="outText"><span class="tags">&lt;mark&gt;&lt;/mark&gt;</span></code> it surround the text with a <mark>yellow</mark> color</p>
-						It's important to point out that css is for the form and HTML the content.
+						<p>It's important to point out that css is for the form and HTML the content.</p>
 					</p>
 					<h5>Lists</h5>
 					<p>
@@ -234,19 +229,5 @@
 			</div>
 			<div class="footer"><p>Copyright © 2018 Pocahontas123</p></div>
 		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
-		<script>
-			$(document).ready(function() {
-				$('#icon-menu').on('click', function() {
-					$('nav').toggleClass('expand');
-					$('header').toggleClass('expand');
-				});
-				
-				$('#icon-menu').on('click', function() {
-					$('#icon-menu').toggleClass('trigger');
-				});
-			});
-			
-		</script>
 	</body>
 </html>

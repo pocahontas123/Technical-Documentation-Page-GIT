@@ -26,9 +26,9 @@ html, body {
 .container {
 	display: grid;
 	height: 100%;
-	grid-gap: 15px;
+	grid-gap: 10px;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: 1000px 100px;
+	grid-template-rows: auto auto;
 	
 	grid-template-areas:
 		"m m m c c c c c c c c c"
@@ -140,6 +140,7 @@ code, pre {
 	padding: 10px;
 	border-radius: 5px;
 	margin: 15px 0px 15px 30px;
+	font-size: medium;
 }
 .preCode {
 	margin: 15px 0px 15px 40px;
@@ -195,44 +196,20 @@ button:focus {
 #section1 img:nth-child(3), #section1 img:nth-child(4) {
 	width: 500px;
 }
-.expand {
-	/*                              */
-}
 
-#icon-menu.trigger span:nth-child(1) {
-	transform: rotate(45deg);
-	top: 12px;
-}
-#icon-menu.trigger span:nth-child(2) {
-	opacity: 0;
-}
-#icon-menu.trigger span:nth-child(3) {
-	transform: rotate(-45deg);
-	top: 12px;
-}
-
-@media only screen and (min-width: 881px) {
-	#icon-menu {
-		display: none;
-	}
-}
+/* @media only screen and (min-width: 881px) { */
+	/* #icon-menu { */
+		/* display: none; */
+	/* } */
+/* } */
 
 @media only screen and (max-width: 882px) {
 	.container {
-		display: grid;
-		height: 100%;
-		grid-gap: 15px;
-		grid-template-columns: repeat(12, 1fr);
-		grid-template-rows: 1000px 100px;
-		
 		grid-template-areas:
-			"c c c c c c c c c c c c"
-			"f f f f f f f f f f f f";
+		"m m m m m m m m m m m m"
+		"c c c c c c c c c c c c"
+		"f f f f f f f f f f f f";		
 	}
-	nav, header{
-		display: none;
-	}
-
 }
 
 @media only screen and (max-width: 865px) {
@@ -245,5 +222,10 @@ button:focus {
 	PRE {
 		width: 50%;
 		overflow: auto;
+	}
+	.outText {
+		padding: 10px;
+		margin: 15px 0px 15px -15px;
+
 	}
 }
